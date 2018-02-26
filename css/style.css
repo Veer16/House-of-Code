@@ -1,9 +1,260 @@
-.plant {
-  width:104px;
-  height: 142px;
-  align-items: center;
 
+html, body {
+  //height: 100%;
+  //height: 864px;
+  //width: 1536px;
+  padding: 0; margin: 0;
 }
-.background{
-  background-color: #979797;
+
+.background1{
+  position: relative;
+  //background-color: grey;
+  background-color: #F4F4F4;
+  z-index: 1;
+  height: 30%;
+  //height: 230.1px;
+}
+
+.background2{
+  position: relative;
+  background-color: #4B4849;
+  z-index: 1;
+  height: 20%;
+  //height: 153.4px;
+}
+
+.background3{
+  position: relative;
+  background-color: #FFFFFF;
+  z-index: 0;
+  height: 65%;
+  //height: 498.55px;
+}
+
+.plant {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  display: block;
+  top: 100%;
+  left: 45%;
+  z-index: 3;
+  transform: translate(0%, -100%);
+}
+
+.option{
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  background-color: #F4F4F4;
+}
+
+.home{
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  width: 20px;
+  height: 20px;
+  background-color: #F4F4F4;
+}
+
+.firstPanel{
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  font-size:90px;
+  width: 400px;
+  height: 50px;
+  z-index: 2;
+  color: #DDDDDD;
+  font-family: "helvetica";
+}
+
+.sourvenir{
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 35%;
+  font-size:15px;
+  width: 120px;
+  height: 50px;
+  z-index: 2;
+  color: #7B8081;
+}
+
+.sidescroll{
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  width: 100px;
+  height: 20px;
+  overflow: hidden;
+   transform: rotate(90deg);
+}
+
+.cactusImg{
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 210px;
+  height: 260px;
+  background-color: black;
+  z-index: 4;
+}
+
+.potted{
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  z-index: 4;
+  color: white;
+  font-size: 35px;
+}
+
+.test{
+  position: absolute;
+  font-size: 10px;
+  top: 38%;
+  left: 50%;
+  width: 200px;
+  height: 250px;
+  z-index: 4;
+  color: white;
+}
+
+.loadbar{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 200px;
+  z-index: 4;
+  background-color: grey;
+  border: grey solid 1px;
+  height: 2px;
+  border-radius: 5px;
+}
+
+.partialBar{
+  position: absolute;
+  left: 0%;
+  //top: -2px;
+  width: 40px;
+  height: 1px;
+  z-index: 5;
+  background-color: white;
+  border: white solid 1px;
+  border-radius: 5px;
+}
+
+.arrow{
+    position: absolute;
+    background-color: #4B4849;
+    top: 46%;
+    left: 65%;
+    width: 10px;
+    height: 20px;
+    z-index: 4;
+}
+
+
+.bottomCactus{
+  position: absolute;
+  background-image: url('../Images/bottomCactus.png');
+  background-size: 170px 275px;
+  width: 170px;
+  height: 160px;
+  display: block;
+  top: 87%;
+  left: -1.8%;
+  z-index: 3;
+  //transform: translate(0%, -100%);
+}
+
+
+.viewButtonT{
+  position: absolute;
+  top: 110%;
+  left: 50%;
+}
+
+.viewButton{
+  background-color: white;
+  color: #7B8081;
+  border: 2px solid #7B8081;
+  padding: 0px 20px 10px 20px;
+}
+
+.rightArrow{
+  font-size: 24px;
+}
+
+.vase{
+  position: absolute;
+  top:  40%;
+  left: 32%;
+  font-size: 16px;
+  width:  20px;
+  height: 50px;
+  z-index: 3;
+  color:#7B8081;
+}
+
+.bottomImg1{
+  position: absolute;
+  top:  40%;
+  left: 34%;
+  font-size: 20px;
+  width:  140px;
+  height: 150px;
+  z-index: 2;
+}
+
+.bottomImg2{
+  position: absolute;
+  top:  40%;
+  left: 43.3%;
+  font-size: 20px;
+  width:  220px;
+  height: 150px;
+  z-index: 2;
+}
+
+.bottomText1{
+  position: absolute;
+  top:  67%;
+  left: 34%;
+  font-size: 10px;
+  width:  70px;
+  height: 140px;
+  overflow: hidden;
+}
+
+.bottomText2{
+  position: absolute;
+  top:  67%;
+  left: 43.3%;
+  font-size: 10px;
+  width:  200px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.viewButtonB{
+  position: absolute;
+  top:  83%;
+  left: 43.3%;
+}
+
+.footer{
+  position: absolute;
+  display: block;
+  top: 110%;
+  left: 90%;
+  font-size: 12px;
+  color: #7B8081;
 }
